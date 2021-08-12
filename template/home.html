@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title Page-->
+    <title>Loan Prediction</title>
+
+    <!-- Icons font CSS-->
+    <link href="./static/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="./static/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="./static/select2.min.css" rel="stylesheet" media="all">
+    <link href="./static/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="./static/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-red p-t-180 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Loan Prediction</h2>
+                    <form action="/predict" method="post">
+                        <div class="row row-space">
+
+
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="gender", id="gender">
+                                            <option disabled="disabled" selected="selected">Gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="married", id="married">
+                                            <option disabled="disabled" selected="selected">Married</option>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="dependents", id="dependents">
+                                            <option disabled="disabled" selected="selected">Dependents</option>
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="education", id="education">
+                                            <option disabled="disabled" selected="selected">Education</option>
+                                            <option>Graduate</option>
+                                            <option>Not Graduate</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="employed", id="employed">
+                                            <option disabled="disabled" selected="selected">Employed</option>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="credit", id="credit">
+                                            <option disabled="disabled" selected="selected">Credit History</option>
+                                            <option>1.0</option>
+                                            <option>0.0</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="area", id="area">
+                                            <option disabled="disabled" selected="selected">Property Area</option>
+                                            <option>Semiurban</option>
+                                            <option>Urban</option>
+                                            <option>Rural</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-2" type="text" placeholder="Applicant Income" name="ApplicantIncome">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-2" type="text" placeholder="CoapplicantIncome" name="CoapplicantIncome">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-2" type="text" placeholder="LoanAmount" name="LoanAmount">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-2" type="text" placeholder="Loan Amount Term" name="Loan_Amount_Term">
+                        </div>
+
+
+
+                        <div class="p-t-30">
+                            <input type="submit" value="PREDICT" class="btn btn--radius btn--green">
+                        </div>
+                    </form>
+                    <br>
+                    <br>
+                    <h3>{{prediction_text}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="./static/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="./static/select2.min.js"></script>
+    <script src="./static/moment.min.js"></script>
+    <script src="./static/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="./static/global.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
