@@ -1,5 +1,5 @@
 # Loan
-Loan Predictor is an application which tells you whether a person can get a loan based on some factors such as Married, Gender, do they have any dependents, Education, are they self employed, the applicants income, co-applicant's income, the amount of loan they want, the area where they live.<br/>
+Loan Predictor is an application which tells you whether a person can get a loan based on some factors such as Married, Gender, do they have any dependents, Education, are they self employed, the applicants income, co-applicant's income, the amount of loan they want, the area where they live.Deployed using Heroku. <br/><br/>
 Model Used: Logistic Regression
 
 # Website Link
