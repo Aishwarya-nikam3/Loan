@@ -17,5 +17,5 @@ https://predicting-loan-status.herokuapp.com/predict
 ![ss2](https://user-images.githubusercontent.com/75825851/130810097-24c0ccf8-a66b-41a2-93d0-29e96379c8b4.PNG)
 
 
-# LinedIn Profile link:
+# LinedIn Profile link
 https://www.linkedin.com/in/aishwarya-nikam-7b19691bb/
