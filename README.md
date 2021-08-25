@@ -7,8 +7,10 @@ https://predicting-loan-status.herokuapp.com/predict
 
 # Tech
 1. Front-End: HTML, CSS, Bootstrap
-2. Back-End: Flask
-3. IDE: Google colab, VSCode
+
+2. Back-End: Flask 
+ 
+3. IDE: Google colab, VSCode 
 
 # Screenshots
 ![ss1](https://user-images.githubusercontent.com/75825851/130810027-3b2ba386-6942-4d2f-bdb4-085b0932cbbd.PNG)
