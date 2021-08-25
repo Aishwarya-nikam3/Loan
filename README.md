@@ -16,6 +16,20 @@ https://predicting-loan-status.herokuapp.com/predict
 ![ss1](https://user-images.githubusercontent.com/75825851/130810027-3b2ba386-6942-4d2f-bdb4-085b0932cbbd.PNG)
 ![ss2](https://user-images.githubusercontent.com/75825851/130810097-24c0ccf8-a66b-41a2-93d0-29e96379c8b4.PNG)
 
+# Directory Tree
+```bash
+├── model
+│   ├── loan.pkl
+├── static 
+│   ├── CSS
+├── template
+│   ├── home.html
+├── Loan_Prediction.ipynb
+├── Procfile
+├── README.md
+├── requirements.txt
+```
+
 
 # LinedIn Profile link
 https://www.linkedin.com/in/aishwarya-nikam-7b19691bb/
