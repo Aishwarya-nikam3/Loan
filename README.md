@@ -3,7 +3,7 @@ Loan Predictor is an application which tells you whether a person can get a loan
 Model Used: Logistic Regression
 
 # Website Link
-
+https://predicting-loan-status.herokuapp.com/predict
 
 # Tech
 1. Front-End: HTML, CSS, Bootstrap
